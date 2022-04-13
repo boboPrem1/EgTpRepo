@@ -263,7 +263,7 @@ nav.headerFirstRow{
     box-shadow: 5px 5px 10px 1px gray;
 }
 
-.mainLine4>aside{
+.mainLine4>div{
     width: 50%;
 }
 
@@ -397,7 +397,7 @@ footer{
     display: flex;
     padding-bottom: 1%;
 }
-.footerItemsContainer>aside{
+.footerItemsContainer>div{
     width: 100%;
 }
 .mL6Item1Container img{
@@ -709,7 +709,7 @@ footer{
         box-shadow: 5px 5px 10px 1px gray;
     }
 
-    .mainLine4>aside{
+    .mainLine4>div{
         width: 50%;
     }
 
@@ -844,7 +844,7 @@ footer{
         display: flex;
         padding-bottom: 1%;
     }
-    .footerItemsContainer>aside{
+    .footerItemsContainer>div{
         width: 100%;
     }
     .mL6Item1Container img{
@@ -1142,7 +1142,7 @@ footer{
         box-shadow: 5px 5px 10px 1px gray;
     }
 
-    .mainLine4>aside{
+    .mainLine4>div{
         width: 50%;
     }
 
@@ -1275,7 +1275,7 @@ footer{
         display: flex;
         padding-bottom: 1%;
     }
-    .footerItemsContainer>aside{
+    .footerItemsContainer>div{
         width: 100%;
     }
     .mL6Item1Container img{
@@ -1589,7 +1589,7 @@ footer{
         box-shadow: 5px 5px 10px 1px gray;
     }
 
-    .mainLine4>aside{
+    .mainLine4>div{
         width: 50%;
     }
 
@@ -1722,7 +1722,7 @@ footer{
         display: flex;
         padding-bottom: 1%;
     }
-    .footerItemsContainer>aside{
+    .footerItemsContainer>div{
         width: 100%;
     }
     .mL6Item1Container img{
@@ -2021,7 +2021,7 @@ footer{
         box-shadow: 5px 5px 10px 1px gray;
     }
 
-    .mainLine4>aside{
+    .mainLine4>div{
         width: 50%;
     }
 
@@ -2154,7 +2154,7 @@ footer{
         display: flex;
         padding-bottom: 1%;
     }
-    .footerItemsContainer>aside{
+    .footerItemsContainer>div{
         width: 100%;
     }
     .mL6Item1Container img{
