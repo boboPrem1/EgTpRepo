@@ -7,11 +7,7 @@
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url('assets/fonts/BebasNeue-Regular.eot') format('eot');
-    src: url('assets/fonts/BebasNeue-Regular.otf');
     src: url('assets/fonts/BebasNeue-Regular.ttf') format('truetype');
-    src: url('assets/fonts/BebasNeue-Regular.woff2') format('woff2');
-    src: url('assets/fonts/BebasNeue-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'BebasNeueBold';
