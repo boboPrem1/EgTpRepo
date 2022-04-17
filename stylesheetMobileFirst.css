@@ -189,16 +189,26 @@ header{
     .mainLine1{
         width: 100%;
         display: flex;
+        flex-direction: column;
         color: white;
+    }
+    .mainLine1 img{
+        height: 100%
     }
     .mainLine1Row1{
         margin: 2% 1%;
+        padding: -1% -1%;
     }
     .mainLine1Row2{
         margin: 2% 1%;
+        padding: -1% -1%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+    .mainLine1Row2 img{
+        height: 100%;
+        scale: 1 .97;
     }
     .pr{
         position: relative;
@@ -210,9 +220,13 @@ header{
         top: 0%;
         margin-top: 2.5%;
         margin-left: 2.5%;
-        font-size: 8px;
+        font-size: 12px;
     }
     .outsiderTextBig{
-        font-size: 11px;
+        font-size: 18px;
+    }
+    .card{
+        box-shadow: 0px 0px 8px 1px rgba(134, 133, 133, 0.6);
+        border-radius: 5px;
     }
   }
