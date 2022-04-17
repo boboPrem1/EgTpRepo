@@ -393,4 +393,21 @@ button{
         border: none;
 
     }
+
+    footer{
+        background-image: url(./assets/Logo/ImageFooter.png);
+    }
+    .footerItemsContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerItemsContainer>div{
+        width: 50%;
+    }
+    .mL6ItemsContainer1{
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    .mL6ItemsContainer1>div{
+    }
   }
