@@ -181,4 +181,38 @@ header{
     .burgerFritesDrinkShadowContainer{
         width: 80%;
     }
+    
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .mainLine1{
+        width: 100%;
+        display: flex;
+        color: white;
+    }
+    .mainLine1Row1{
+        margin: 2% 1%;
+    }
+    .mainLine1Row2{
+        margin: 2% 1%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .pr{
+        position: relative;
+    }
+    .pa{
+        position: absolute;
+    }
+    .testOutsider{
+        top: 0%;
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+        font-size: 8px;
+    }
+    .outsiderTextBig{
+        font-size: 11px;
+    }
   }
