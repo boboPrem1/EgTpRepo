@@ -26,6 +26,18 @@
     src: url('assets/fonts/Montserrat-Bold.otf');
 }
 
+.fontAlfaSlabOne{
+    font-family: 'AlfaSlabOne', Arial, sans-serif;
+}.fontBebasNeue{
+    font-family: 'BebasNeue', Arial, sans-serif;
+}.fontBebasNeueBold{
+    font-family: 'BebasNeueBold', Arial, sans-serif;
+}.fontMontserrat{
+    font-family: 'Montserrat', Arial, sans-serif;
+}.fontMontserratBold{
+    font-family: 'MontserratBold', Arial, sans-serif;
+}
+
 body{
     width: 100%;
     margin: 0px;
@@ -53,34 +65,22 @@ header{
 }
 footer{
     background-image: url(./assets/Logo/ImageFooter.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 125px;
-    overflow: hidden;
 }
+
 button{
     border: none;
     background: transparent;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (width <= 375px) {
     @keyframes dandinAnim {
         from{
             rotate: -.05turn;
             scale: 1;
         }
-        20%{
-        }
-        40%{
-        }
         50%{
             rotate: .05turn;
             scale: .9;
-        }
-        60%{
-        }
-        80%{
-
         }
         to{
             rotate: .5turn;
@@ -122,11 +122,13 @@ button{
     }
     .motoLogoContainer{
         display: inline-block;
-        width: 40%;
+        width: 25%;
         margin-left: 4%;
     }
     .deliveryContactContainer{
-        font-size: 12px;
+        font-size: 11px;
+        padding-top: 2.5%;
+        color: #3d2514;
     }
     
     .menuContainer{
@@ -159,6 +161,7 @@ button{
         scale: 1.2;
     }
     .menuBtnContainer a{
+        color: #3d2514;
         box-shadow: 0px 0px 2.5px .01px rgb(37, 36, 36);
         padding: .5%;
         margin: 1%;
@@ -199,30 +202,42 @@ button{
     }
     .headerSecondRow>article{
         width: 50%;
+        padding-left: 1.5%;
     }
     .itIsAGoodTime{
-        font-size: 10px;
+        font-size: 9px;
+        padding: 1% 1.5%;
+        border: 1px dashed #441f0c;
+        color: #441f0c;
+        width: 94%;
     }
     .titleBurger{
         font-size: 35px;
+        color: #41200c;
+        text-shadow: 3px 3px 2px #ffe8bb;
     }
     .titleWeek{
         font-size: 20;
+        text-shadow: 3px 3px 2px #ffe8bb;
+        color: #41200c;
     }
     .headerSecondRowItem2{
         position: relative;
     }
     .burgerFritesDrinkContainer{
         width: 80%;
+        padding-left: 15%;
     }
     .priceImgContainer{
         width: 25%;
         position: absolute;
         translate: 60% -75%;
         z-index: 2;
+        padding-left: 15%;
     }
     .burgerFritesDrinkShadowContainer{
         width: 80%;
+        padding-left: 25%;
     }
     
     main{
@@ -264,10 +279,10 @@ button{
         top: 0%;
         margin-top: 2.5%;
         margin-left: 2.5%;
-        font-size: 12px;
+        font-size: 14px;
     }
     .outsiderTextBig{
-        font-size: 18px;
+        font-size: 23px;
     }
     .cardMin320{
         box-shadow: 0px 0px 8px 1px rgba(134, 133, 133, 0.6);
@@ -283,14 +298,16 @@ button{
     }
     .mL2Item>span{
         margin: 2%;
-        padding: 2%;
+        padding: 3% 2% 2%;
         background: #ffc135;
+        color: #42210d;
     }
     .mL2Item2{
-        color: #41200c;
+        color: #42210d;
     }
     .mL2Item3{
         color: #442108;
+        font-size: 12.5px;
     }
     
     .mainLine3>article{
@@ -319,7 +336,6 @@ button{
         color: linen;
         background: #e01d1e;
         padding: 5% 15%;
-        font-weight: bold;
         border-radius: 2px;
     }
 
@@ -328,13 +344,16 @@ button{
     }
     .mL4Item1{
         margin-bottom: 5%;
+        color: #3a3b3a;
     }
     .mL4Item1>div:first-child{
         font-size: 15px;
         margin-bottom: 1%;
+        font-weight: bold;
     }
     .mL4Item1>div:nth-child(2){
         font-size: 25px;
+        color: #442108;
         margin-bottom: 5%;
     }
     .mL4Item1>div:last-child{
@@ -363,12 +382,12 @@ button{
     }
     .ml5Item1{
         top: 4%;
-        left: 5%;
+        left: 4%;
         width: 20%;
     }
     .ml5Item2{
-        top: 4%;
-        right: 13%;
+        top: 5%;
+        right: 12.5%;
         width: 5%;
         rotate: -.05turn
     }
@@ -380,17 +399,17 @@ button{
     .ml5Item3Title1{
         padding-top: 10%;
         margin-left: 5%;
-        color: #441f0a;
-        font-size: x-small;
+        color: #442108;
+        font-size: small;
     }
     .ml5Item3Title2{
         padding-top: 2%;
         margin-left: 5%;
         font-weight: bold;
-        color: #441f0a;
+        color: #442108;
     }
     .mL5Item4 div{
-        top: 42.5%;
+        top: 45%;
         left: 35%;
         right: 35%;
         z-index: -1;
@@ -416,14 +435,461 @@ button{
         margin: 1%;
         border: 1px solid gray;
         border-radius: 2.5px;
-        font-weight: bold;
         font-size: 10px;
+        color: #442108;
     }
     .ml5Item3FormContainer form button{
         height: 28px;
         width: 52.5%;
         color: linen;
         background: #e01d1e;
+        letter-spacing: 1px;
+        border: none;
+
+    }
+    footer{
+        background-image: url(./assets/Logo/ImageFooter.png);
+        background-size: 105%;
+        height: 135px;
+        overflow: hidden;
+    }
+    .footerItemsContainer{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    .footerItemsContainer>div{
+        width: 50%;
+    }
+    .mL6ItemsContainer1{
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    .mL6ItemsContainer1>div{
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .mL6Item1Container{
+        width: 70%;
+    }
+    .mL6Item2Container{
+        height: 15%;
+        overflow: scroll;
+        border-bottom-right-radius: 5px;
+        border-right: 1px dotted darkgray;
+        border-bottom: 1px dotted darkgray;
+        padding: 5% 2%;
+        width: 90%;
+        scrollbar-width: auto;
+        font-size: 12.5px;
+    }
+    .mL6Item3Container{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .mL6ItemsContainer2{
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+    .adresseFooter{
+        margin-top: 30%;
+    }
+    .adresseFooter>div{
+        display: flex;
+        margin-bottom: 4%;
+    }
+    .adresseFooter>div>img{
+        width: 15px;
+        height: auto;
+        margin-right: 5%;
+    }
+    .adresseFooter>div>span{
+        font-size: 10px;
+    }
+    .mL6Item6Container{
+        margin-top: 50%;
+        margin-left: 58%;
+    }
+    .mL6Item6Container img{
+        height: 10px;
+    }
+  }
+
+@media screen and (width > 375px) and (width <= 800px) {
+    @keyframes dandinAnim {
+        from{
+            rotate: -.05turn;
+            scale: 1;
+        }
+        50%{
+            rotate: .05turn;
+            scale: .9;
+        }
+        to{
+            rotate: .5turn;
+            scale: 1;
+            transform: rotate3d(0, 1, 1, .5turn);
+        }
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        margin: 1%;
+        display: flex;
+        position: relative;
+    }
+    nav>div{
+        display: inline-block;
+    }
+    img{
+        width: 100%;
+    }
+    .leftContainer{
+        width: 50%;
+    }
+    .rightContainer{
+        width: 50%;
+    }
+    .rightContainerItem1{
+        display: flex;
+        font-family: 'MontserratBold',arial,serif;
+        text-align: center;
+        padding-left: 19%;
+    }
+    .rightContainerItem1 span{
+        display: inline-block;
+        margin-top: 0%;
+    }
+    .logoContainer{
+        width: 70%;
+    }
+    .motoLogoContainer{
+        display: inline-block;
+        width: 15%;
+        margin-left: 20%;
+    }
+    .deliveryContactContainer{
+        font-size: 18px;
+        padding-top: 2.5%;
+        padding-left: 2%;
+        color: #3d2514;
+    }
+    
+    .menuContainer{
+        border: 1px solid red;
+        padding: 0% 5%;
+        overflow: hidden;
+        height: 18px;
+        width: 0%;
+        margin-left: 50%;
+        padding-top: .5%;
+        padding-left: 0%;
+        padding-right: 2%;
+        translate: 0% 0%;
+    }
+    .menuContainer:hover, .menuContainer:active{
+        height: 1%;
+        width: 83.5%;
+        translate: 5% 0%;
+        margin-top: 1%;
+        margin-left: 4%;
+        transition: height .2s ease-in;
+    }
+    menu{
+        margin: 0%;
+        padding: 0%;
+    }
+    .menuBtnContainer{
+        padding: 0%;
+        text-align: center;
+        display: block;
+        scale: 1.2;
+    }
+    .menuBtnContainer a{
+        color: #3d2514;
+        box-shadow: 0px 0px 2.5px .01px rgb(37, 36, 36);
+        padding: .5%;
+        margin: 1%;
+        border-radius: 1px;
+        animation: 1s dandinAnim alternate infinite linear;
+    }
+    .menuBtnContainer a:hover{
+        animation: 0s dandinAnim alternate infinite ease-in-out;
+    }
+    .menuBtnContainer>a>span{
+        display: block;
+        width: 15px;
+        height: 3px;
+        padding: 0px;
+        margin: 5% 0%;
+        background: black;
+        border-radius: 5px;
+    }
+    .menuItemContainer{
+        border-top: 1px solid rgba(165, 42, 42, 0.336);
+        border-bottom: 1px solid rgba(165, 42, 42, 0.336);
+        margin: 1% 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuItemContainer span{
+        margin-top: 1.5%;
+    }
+    menu a{
+        font-family: 'BebasNeueBold',arial,serif;
+        color: #3d2514;
+    }
+
+    .headerSecondRow{
+        width: 100;
+        padding: 3%;
+        display: flex;
+    }
+    .headerSecondRow>article{
+        width: 50%;
+        padding-left: 1.5%;
+    }
+    .itIsAGoodTime{
+        font-size: 9px;
+        padding: 1% 1.5%;
+        border: 1px dashed #441f0c;
+        color: #441f0c;
+        width: 94%;
+    }
+    .titleBurger{
+        font-size: 35px;
+        color: #41200c;
+        text-shadow: 3px 3px 2px #ffe8bb;
+    }
+    .titleWeek{
+        font-size: 20;
+        text-shadow: 3px 3px 2px #ffe8bb;
+        color: #41200c;
+    }
+    .headerSecondRowItem2{
+        position: relative;
+    }
+    .burgerFritesDrinkContainer{
+        width: 80%;
+        padding-left: 15%;
+    }
+    .priceImgContainer{
+        width: 25%;
+        position: absolute;
+        translate: 60% -75%;
+        z-index: 2;
+        padding-left: 15%;
+    }
+    .burgerFritesDrinkShadowContainer{
+        width: 80%;
+        padding-left: 25%;
+    }
+    
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .mainLine1{
+        width: 100%;
+        margin-top: 4%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .mainLine1 img{
+        height: 100%
+    }
+    .mainLine1Row1{
+        margin: 2% 1%;
+        padding: -1% -1%;
+    }
+    .mainLine1Row2{
+        margin: 2% 1%;
+        padding: -1% -1%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .mainLine1Row2 img{
+        height: 100%;
+        scale: 1 .97;
+    }
+    .prMin320{
+        position: relative;
+    }
+    .paMin320{
+        position: absolute;
+    }
+    .testOutsider{
+        top: 0%;
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+        font-size: 14px;
+    }
+    .outsiderTextBig{
+        font-size: 23px;
+    }
+    .cardMin320{
+        box-shadow: 0px 0px 8px 1px rgba(134, 133, 133, 0.6);
+        border-radius: 5px;
+    }
+
+    .mainLine2{
+        width: 100%;
+    }
+    .mainLine2>div{
+        text-align: center;
+        margin: 5% 0%;
+    }
+    .mL2Item>span{
+        margin: 2%;
+        padding: 3% 2% 2%;
+        background: #ffc135;
+        color: #42210d;
+    }
+    .mL2Item2{
+        color: #42210d;
+    }
+    .mL2Item3{
+        color: #442108;
+        font-size: 12.5px;
+    }
+    
+    .mainLine3>article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 4% 0%;
+    }
+    .mainLine3>article:nth-child(2)>img{
+        width: 70%;
+        margin: auto;
+    }
+    .mainLine3>article h2{
+        color: #412009;
+    }
+    .mainLine3>article h2+span{
+        color: #3c210f;
+    }
+    .mainLine3>article>div:last-child{
+        margin: 5% 0%;
+    }
+    .mainLine3>article button{
+        color: linen;
+        background: #e01d1e;
+        padding: 5% 15%;
+        border-radius: 2px;
+    }
+
+    .mainLine4{
+        padding: 4%;
+    }
+    .mL4Item1{
+        margin-bottom: 5%;
+        color: #3a3b3a;
+    }
+    .mL4Item1>div:first-child{
+        font-size: 15px;
+        margin-bottom: 1%;
+        font-weight: bold;
+    }
+    .mL4Item1>div:nth-child(2){
+        font-size: 25px;
+        color: #442108;
+        margin-bottom: 5%;
+    }
+    .mL4Item1>div:last-child{
+        font-size: 12px;
+    }
+    .mL4Item2{
+        margin-bottom: 2%;
+    }
+    .mL4Item2>span{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #dddddd;
+    }
+    .mL4Item2>span:first-child{
+        background: #ffc135;
+    }
+
+    .mainLine5{
+        margin: 10% 0%;
+        position: relative;
+    }
+    .mL5Item1-2Container div,.mL5Item4 div{
+        position: absolute;
+    }
+    .ml5Item1{
+        top: 4%;
+        left: 4%;
+        width: 20%;
+    }
+    .ml5Item2{
+        top: 5%;
+        right: 12.5%;
+        width: 5%;
+        rotate: -.05turn
+    }
+    .mL5Item3{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .ml5Item3Title1{
+        padding-top: 10%;
+        margin-left: 5%;
+        color: #442108;
+        font-size: small;
+    }
+    .ml5Item3Title2{
+        padding-top: 2%;
+        margin-left: 5%;
+        font-weight: bold;
+        color: #442108;
+    }
+    .mL5Item4 div{
+        top: 45%;
+        left: 35%;
+        right: 35%;
+        z-index: -1;
+        opacity: .8;
+    }
+    .ml5Item3FormContainer form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 6%;
+        padding-bottom: 6%;
+
+    }
+    .ml5Item3FormContainer form div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ml5Item3FormContainer form div input,
+    .ml5Item3FormContainer form button{
+        background: transparent;
+        width: 50%;
+        height: 25px;
+        margin: 1%;
+        border: 1px solid gray;
+        border-radius: 2.5px;
+        font-size: 10px;
+        color: #442108;
+    }
+    .ml5Item3FormContainer form button{
+        height: 28px;
+        width: 52.5%;
+        color: linen;
+        background: #e01d1e;
+        letter-spacing: 1px;
         border: none;
 
     }
@@ -448,7 +914,7 @@ button{
         width: 70%;
     }
     .mL6Item2Container{
-        height: 22.5%;
+        height: 19.5%;
         overflow: scroll;
         border-bottom-right-radius: 5px;
         border-right: 1px dotted darkgray;
@@ -471,7 +937,7 @@ button{
     }
     .adresseFooter>div{
         display: flex;
-        margin-bottom: 5%;
+        margin-bottom: 4%;
     }
     .adresseFooter>div>img{
         width: 15px;
@@ -479,13 +945,13 @@ button{
         margin-right: 5%;
     }
     .adresseFooter>div>span{
-        font-size: 7px;
+        font-size: 10px;
     }
     .mL6Item6Container{
         margin-top: 10%;
-        margin-left: 60%;
+        margin-left: 58%;
     }
     .mL6Item6Container img{
         height: 10px;
     }
-  }
+}

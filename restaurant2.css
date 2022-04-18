@@ -1,5 +1,8 @@
 /* Code css by @Vanio_Lines*/
 
+*{
+    border: 1px solid black;
+}
 @font-face {
     font-family: 'AlfaSlabOne';
     src: url('assets/fonts/AlfaSlabOne-Regular.ttf') format('truetype');
@@ -41,7 +44,9 @@ body{
 header{
     background-image: url(assets/Logo/backgroundHeader.png);
 }
-
+.menuBtnContainer{
+    display: none;
+}
 nav.headerFirstRow{
     padding: 1%;
     display: flex;
