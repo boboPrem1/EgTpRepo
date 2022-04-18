@@ -51,12 +51,43 @@ a:active{
 header{
     background-image: url(assets/Logo/backgroundHeader.png);
 }
+footer{
+    background-image: url(./assets/Logo/ImageFooter.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 125px;
+    overflow: hidden;
+}
 button{
     border: none;
     background: transparent;
 }
 
 @media screen and (max-width: 320px) {
+    @keyframes dandinAnim {
+        from{
+            rotate: -.05turn;
+            scale: 1;
+        }
+        20%{
+        }
+        40%{
+        }
+        50%{
+            rotate: .05turn;
+            scale: .9;
+        }
+        60%{
+        }
+        80%{
+
+        }
+        to{
+            rotate: .5turn;
+            scale: 1;
+            transform: rotate3d(0, 1, 1, .5turn);
+        }
+    }
     header{
         width: 100%;
     }
@@ -101,16 +132,20 @@ button{
     .menuContainer{
         padding: 0% 5%;
         overflow: hidden;
-        height: 20px;
+        height: 18px;
         width: 0%;
-        margin: 1% auto;
-        translate: -30% 0%;
+        margin-left: 5%;
+        padding-top: .5%;
+        padding-left: 0%;
+        padding-right: 6%;
+        translate: 700% 0%;
     }
     .menuContainer:hover, .menuContainer:active{
         height: 55px;
         width: 90%;
         translate: 0% 0%;
-        margin: 1% 0%;
+        margin-top: 1%;
+        margin-left: 4%;
         transition: height .2s ease-in;
     }
     menu{
@@ -119,20 +154,19 @@ button{
     }
     .menuBtnContainer{
         padding: 0%;
-        display: block;
         text-align: center;
-        scale: 1.3 1;
+        display: block;
+        scale: 1.2;
     }
     .menuBtnContainer a{
         box-shadow: 0px 0px 2.5px .01px rgb(37, 36, 36);
         padding: .5%;
         margin: 1%;
         border-radius: 1px;
-        rotate: 0.25turn;
+        animation: 1s dandinAnim alternate infinite linear;
     }
     .menuBtnContainer a:hover{
-        transform: rotate(-.25turn);
-        transition: transform .25s ease-out;
+        animation: 0s dandinAnim alternate infinite ease-in-out;
     }
     .menuBtnContainer>a>span{
         display: block;
@@ -393,13 +427,11 @@ button{
         border: none;
 
     }
-
-    footer{
-        background-image: url(./assets/Logo/ImageFooter.png);
-    }
+    
     .footerItemsContainer{
         display: flex;
         justify-content: space-between;
+        color: white;
     }
     .footerItemsContainer>div{
         width: 50%;
@@ -409,5 +441,51 @@ button{
         margin-left: 2%;
     }
     .mL6ItemsContainer1>div{
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    .mL6Item1Container{
+        width: 70%;
+    }
+    .mL6Item2Container{
+        height: 22.5%;
+        overflow: scroll;
+        border-bottom-right-radius: 5px;
+        border-right: 1px dotted darkgray;
+        border-bottom: 1px dotted darkgray;
+        padding: 5% 2%;
+        width: 90%;
+        scrollbar-width: auto;
+        font-size: 12.5px;
+    }
+    .mL6Item3Container{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .mL6ItemsContainer2{
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+    .adresseFooter{
+        margin-top: 30%;
+    }
+    .adresseFooter>div{
+        display: flex;
+        margin-bottom: 5%;
+    }
+    .adresseFooter>div>img{
+        width: 15px;
+        height: auto;
+        margin-right: 5%;
+    }
+    .adresseFooter>div>span{
+        font-size: 7px;
+    }
+    .mL6Item6Container{
+        margin-top: 10%;
+        margin-left: 60%;
+    }
+    .mL6Item6Container img{
+        height: 10px;
     }
   }
