@@ -514,7 +514,7 @@ button{
     .mL6Item6Container img{
         height: 10px;
     }
-  }
+}
 
 @media screen and (width > 375px) and (width <= 800px) {
     @keyframes dandinAnim {
@@ -958,5 +958,404 @@ button{
     }
     .mL6Item6Container img{
         height: 17.5px;
+    }
+}
+
+@media screen and (width > 800px){
+    header{
+        width: 100%;
+    }
+    nav{
+        padding: 1%;
+        display: flex;
+        position: relative;
+    }
+    nav>div{
+        display: inline-block;
+    }
+    img{
+        width: 100%;
+    }
+    .leftContainer{
+        width: 50%;
+    }
+    .rightContainer{
+        width: 50%;
+    }
+    .rightContainerItem1{
+        display: flex;
+        font-family: 'MontserratBold',arial,serif;
+        text-align: center;
+        padding-left: 19%;
+    }
+    .rightContainerItem1 span{
+        display: inline-block;
+        margin-top: 0%;
+    }
+    .logoContainer{
+        width: 40%;
+    }
+    .motoLogoContainer{
+        display: inline-block;
+        width: 10%;
+        margin-left: 45%;
+    }
+    .deliveryContactContainer{
+        font-size: 20px;
+        padding-top: 2.5%;
+        padding-left: 2%;
+        color: #3d2514;
+    }
+    
+    .menuContainer{
+        padding: 0% 5%;
+        overflow: hidden;
+        width: 30%;
+        margin-left: 65%;
+        translate: 0% 0%;
+    }
+    menu{
+        margin: 0%;
+        padding: 0%;
+    }
+    .menuBtnContainer{
+        display: none;
+    }
+    .menuItemContainer{
+        border-radius: 20px;
+        margin: 1% 0%;
+        padding-bottom: 1%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuItemContainer span{
+        margin-top: 1.5%;
+    }
+    menu a{
+        font-family: 'BebasNeueBold',arial,serif;
+        color: #3d2514;
+    }
+
+    .headerSecondRow{
+        width: 100;
+        padding: 3%;
+        display: flex;
+    }
+    .headerSecondRow>article{
+        width: 50%;
+        padding-left: 2%;
+    }
+    .itIsAGoodTime{
+        font-size: 31.5px;
+        padding: 1% 1.5%;
+        border: 1px dashed #441f0c;
+        color: #441f0c;
+        width: 81.5%;
+    }
+    .titleBurger{
+        font-size: 100px;
+        color: #41200c;
+        text-shadow: 3px 3px 2px #ffe8bb;
+    }
+    .titleWeek{
+        font-size: 30px;
+        text-shadow: 3px 3px 2px #ffe8bb;
+        color: #41200c;
+    }
+    .headerSecondRowItem2{
+        position: relative;
+    }
+    .burgerFritesDrinkContainer{
+        width: 90%;
+        padding-left: 5%;
+    }
+    .priceImgContainer{
+        width: 25%;
+        position: absolute;
+        translate: 60% -75%;
+        z-index: 2;
+        padding-left: 15%;
+    }
+    .burgerFritesDrinkShadowContainer{
+        width: 90%;
+        padding-left: 10%;
+    }
+    
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .mainLine1{
+        width: 100%;
+        margin-top: 4%;
+        display: flex;
+        color: white;
+    }
+    .mainLine1 img{
+        height: 100%
+    }
+    .mainLine1Row1{
+        margin: 2% 1%;
+        padding: -1% -1%;
+    }
+    .mainLine1Row2{
+        margin: 2% 1%;
+        padding: -1% -1%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .mainLine1Row2 img{
+        height: 100%;
+        scale: 1 .97;
+    }
+    .pr{
+        position: relative;
+    }
+    .pa{
+        position: absolute;
+    }
+    .testOutsider{
+        top: 0%;
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+        font-size: 14px;
+    }
+    .outsiderTextBig{
+        font-size: 23px;
+    }
+    .card{
+        box-shadow: 0px 0px 12px 1px rgba(134, 133, 133, 0.6);
+        border-radius: 10px;
+    }
+
+    .mainLine2{
+        width: 100%;
+    }
+    .mainLine2>div{
+        text-align: center;
+        margin: 5% 0%;
+    }
+    .mL2Item>span{
+        margin: 2%;
+        padding: 1.5% 1.5% 1%;
+        background: #ffc135;
+        color: #42210d;
+    }
+    .mL2Item2{
+        color: #42210d;
+        font-size: 40px;
+    }
+    .mL2Item3{
+        color: #442108;
+        font-size: 20px;
+    }
+    .mainLine3{
+        display: flex;
+        margin-bottom: 5%;
+    }
+    .mainLine3>article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 4% 0%;
+    }
+    .mainLine3>article:nth-child(2)>img{
+        width: 70%;
+        margin: auto;
+    }
+    .mainLine3>article h2{
+        color: #412009;
+    }
+    .mainLine3>article h2+span{
+        color: #3c210f;
+    }
+    .mainLine3>article>div:last-child{
+        margin: 5% 0%;
+    }
+    .mainLine3>article button{
+        color: linen;
+        background: #e01d1e;
+        padding: 5% 15%;
+        border-radius: 2px;
+    }
+
+    .mainLine4{
+        padding: 4%;
+        display: flex;
+    }
+    .mainLine4>div{
+        width: 50%;
+    }
+    .mL4Item1{
+        margin-bottom: 40%;
+        color: #3a3b3a;
+    }
+    .mL4Item1>div:first-child{
+        font-size: 25px;
+        margin-bottom: 1%;
+        font-weight: bold;
+    }
+    .mL4Item1>div:nth-child(2){
+        font-size: 30px;
+        color: #442108;
+        margin-bottom: 3%;
+    }
+    .mL4Item1>div:last-child{
+        font-size: 15px;
+    }
+    .mL4Item2{
+        margin-bottom: 0%;
+    }
+    .mL4Item2>span{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #dddddd;
+    }
+    .mL4Item2>span:first-child{
+        background: #ffc135;
+    }
+
+    .mainLine5{
+        margin: 10% 0%;
+        position: relative;
+        display: flex;
+        padding-bottom: 10%;
+        overflow: hidden;
+    }
+    .mL5Item1-2Container div,.mL5Item4 div{
+        position: absolute;
+    }
+    .ml5Item1{
+        top: 4%;
+        left: -4%;
+        width: 20%;
+    }
+    .ml5Item2{
+        top: 50%;
+        left: 18%;
+        width: 5%;
+    }
+    .mL5Item3{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .ml5Item3Title1{
+        padding-top: 15%;
+        margin-left: 5%;
+        color: #442108;
+        font-size: 25px;
+    }
+    .ml5Item3Title2{
+        padding-top: 5%;
+        margin-left: 5%;
+        font-size: 40px;
+        font-weight: bold;
+        color: #442108;
+    }
+    .mL5Item4 div{
+        top: 55%;
+        left: 80%;
+        right: -2%;
+        z-index: -1;
+    }
+    .ml5Item3FormContainer form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15%;
+        padding-bottom: 6%;
+
+    }
+    .ml5Item3FormContainer form div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ml5Item3FormContainer form div input,
+    .ml5Item3FormContainer form button{
+        background: transparent;
+        width: 50%;
+        height: 50px;
+        margin: 1%;
+        border: 1px solid gray;
+        border-radius: 2.5px;
+        font-size: 10px;
+        color: #442108;
+    }
+    .ml5Item3FormContainer form button{
+        height: 53px;
+        width: 50.5%;
+        color: linen;
+        background: #e01d1e;
+        letter-spacing: 1px;
+        border: none;
+
+    }
+    footer{
+        background-size: 125%;
+    }
+    .footerItemsContainer{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    .footerItemsContainer>div{
+        width: 50%;
+    }
+    .mL6ItemsContainer1{
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    .mL6ItemsContainer1>div{
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    .mL6Item1Container{
+        width: 30%;
+    }
+    .mL6Item2Container{
+        padding: 2% 0% 7%;
+        width: 90%;
+        font-size: 20px;
+    }
+    .mL6Item3Container{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .mL6ItemsContainer2{
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+    .adresseFooter{
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+    .adresseFooter>div{
+        display: flex;
+        margin-bottom: 3%;
+    }
+    .adresseFooter>div>img{
+        width: 20px;
+        height: 17.5px;
+        margin-right: 2.5%;
+    }
+    .adresseFooter>div>span{
+        font-size: 20px;
+        margin-top: -.5%;
+    }
+    .mL6Item6Container{
+        margin-top: 9.5%;
+        margin-left: 82.5%;
+    }
+    .mL6Item6Container img{
+        height: 20px;
     }
 }
