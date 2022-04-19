@@ -1008,10 +1008,9 @@ button{
     }
     
     .menuContainer{
-        padding: 0% 5%;
         overflow: hidden;
         width: 30%;
-        margin-left: 65%;
+        margin-left: 70%;
         translate: 0% 0%;
     }
     menu{
@@ -1055,7 +1054,7 @@ button{
         width: 81.5%;
     }
     .titleBurger{
-        font-size: 100px;
+        font-size: 85px;
         color: #41200c;
         text-shadow: 3px 3px 2px #ffe8bb;
     }
@@ -1068,7 +1067,7 @@ button{
         position: relative;
     }
     .burgerFritesDrinkContainer{
-        width: 90%;
+        width: 70%;
         padding-left: 5%;
     }
     .priceImgContainer{
@@ -1079,7 +1078,7 @@ button{
         padding-left: 15%;
     }
     .burgerFritesDrinkShadowContainer{
-        width: 90%;
+        width: 70%;
         padding-left: 10%;
     }
     
