@@ -210,7 +210,7 @@ button{
         padding: 1% 1.5%;
         border: 1px dashed #441f0c;
         color: #441f0c;
-        width: 94%;
+        width: 95%;
     }
     .titleBurger{
         font-size: 35px;
@@ -218,7 +218,7 @@ button{
         text-shadow: 3px 3px 2px #ffe8bb;
     }
     .titleWeek{
-        font-size: 20;
+        font-size: 15px;
         text-shadow: 3px 3px 2px #ffe8bb;
         color: #41200c;
     }
@@ -270,10 +270,10 @@ button{
         height: 100%;
         scale: 1 .97;
     }
-    .prMin320{
+    .pr{
         position: relative;
     }
-    .paMin320{
+    .pa{
         position: absolute;
     }
     .testOutsider{
@@ -285,7 +285,7 @@ button{
     .outsiderTextBig{
         font-size: 23px;
     }
-    .cardMin320{
+    .card{
         box-shadow: 0px 0px 8px 1px rgba(134, 133, 133, 0.6);
         border-radius: 5px;
     }
@@ -629,8 +629,12 @@ button{
     .menuItemContainer{
         border-top: 1px solid rgba(165, 42, 42, 0.336);
         border-bottom: 1px solid rgba(165, 42, 42, 0.336);
+        border-radius: 20px;
+        box-shadow: 5px 2px 8px 1px rgba(0, 0, 0, 0.363);
         margin: 1% 0%;
         padding-bottom: 1%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
         display: flex;
         justify-content: space-between;
     }
@@ -649,22 +653,22 @@ button{
     }
     .headerSecondRow>article{
         width: 50%;
-        padding-left: 1.5%;
+        padding-left: 2%;
     }
     .itIsAGoodTime{
-        font-size: 9px;
+        font-size: 19px;
         padding: 1% 1.5%;
         border: 1px dashed #441f0c;
         color: #441f0c;
-        width: 94%;
+        width: 81.5%;
     }
     .titleBurger{
-        font-size: 35px;
+        font-size: 50px;
         color: #41200c;
         text-shadow: 3px 3px 2px #ffe8bb;
     }
     .titleWeek{
-        font-size: 20;
+        font-size: 20px;
         text-shadow: 3px 3px 2px #ffe8bb;
         color: #41200c;
     }
@@ -672,8 +676,8 @@ button{
         position: relative;
     }
     .burgerFritesDrinkContainer{
-        width: 80%;
-        padding-left: 15%;
+        width: 90%;
+        padding-left: 5%;
     }
     .priceImgContainer{
         width: 25%;
@@ -683,8 +687,8 @@ button{
         padding-left: 15%;
     }
     .burgerFritesDrinkShadowContainer{
-        width: 80%;
-        padding-left: 25%;
+        width: 90%;
+        padding-left: 10%;
     }
     
     main{
@@ -695,7 +699,6 @@ button{
         width: 100%;
         margin-top: 4%;
         display: flex;
-        flex-direction: column;
         color: white;
     }
     .mainLine1 img{
@@ -716,10 +719,10 @@ button{
         height: 100%;
         scale: 1 .97;
     }
-    .prMin320{
+    .pr{
         position: relative;
     }
-    .paMin320{
+    .pa{
         position: absolute;
     }
     .testOutsider{
@@ -731,9 +734,9 @@ button{
     .outsiderTextBig{
         font-size: 23px;
     }
-    .cardMin320{
-        box-shadow: 0px 0px 8px 1px rgba(134, 133, 133, 0.6);
-        border-radius: 5px;
+    .card{
+        box-shadow: 0px 0px 12px 1px rgba(134, 133, 133, 0.6);
+        border-radius: 10px;
     }
 
     .mainLine2{
@@ -745,25 +748,29 @@ button{
     }
     .mL2Item>span{
         margin: 2%;
-        padding: 3% 2% 2%;
+        padding: 2% 1.5% 1%;
         background: #ffc135;
         color: #42210d;
     }
     .mL2Item2{
         color: #42210d;
+        font-size: 25px;
     }
     .mL2Item3{
         color: #442108;
-        font-size: 12.5px;
+        font-size: 15px;
     }
-    
+    .mainLine3{
+        display: flex;
+        margin-bottom: 5%;
+    }
     .mainLine3>article{
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        margin-top: 5%;
-        margin-bottom: 10%;
+        margin-left: 1%;
+        margin-right: 1%;
         padding: 4% 0%;
     }
     .mainLine3>article:nth-child(2)>img{
@@ -794,25 +801,25 @@ button{
         color: #3a3b3a;
     }
     .mL4Item1>div:first-child{
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 1%;
         font-weight: bold;
     }
     .mL4Item1>div:nth-child(2){
-        font-size: 25px;
+        font-size: 30px;
         color: #442108;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
     .mL4Item1>div:last-child{
-        font-size: 12px;
+        font-size: 15px;
     }
     .mL4Item2{
-        margin-bottom: 2%;
+        margin-bottom: 1%;
     }
     .mL4Item2>span{
         display: inline-block;
-        height: 10px;
-        width: 10px;
+        height: 12.5px;
+        width: 12.5px;
         border-radius: 50%;
         background: #dddddd;
     }
@@ -847,20 +854,21 @@ button{
         padding-top: 10%;
         margin-left: 5%;
         color: #442108;
-        font-size: small;
+        font-size: large;
     }
     .ml5Item3Title2{
-        padding-top: 2%;
+        padding-top: 1%;
         margin-left: 5%;
+        font-size: 25px;
         font-weight: bold;
         color: #442108;
     }
     .mL5Item4 div{
         top: 45%;
-        left: 35%;
-        right: 35%;
+        left: 39%;
+        right: 39%;
         z-index: -1;
-        opacity: .8;
+        opacity: .6;
     }
     .ml5Item3FormContainer form{
         display: flex;
@@ -878,7 +886,7 @@ button{
     .ml5Item3FormContainer form button{
         background: transparent;
         width: 50%;
-        height: 25px;
+        height: 40px;
         margin: 1%;
         border: 1px solid gray;
         border-radius: 2.5px;
@@ -886,7 +894,7 @@ button{
         color: #442108;
     }
     .ml5Item3FormContainer form button{
-        height: 28px;
+        height: 43px;
         width: 52.5%;
         color: linen;
         background: #e01d1e;
@@ -904,8 +912,8 @@ button{
         width: 50%;
     }
     .mL6ItemsContainer1{
-        margin-top: 2%;
-        margin-left: 2%;
+        margin-top: 1%;
+        margin-left: 1%;
     }
     .mL6ItemsContainer1>div{
         margin-top: 5%;
@@ -915,18 +923,14 @@ button{
         width: 70%;
     }
     .mL6Item2Container{
-        height: 19.5%;
         overflow: scroll;
-        border-bottom-right-radius: 5px;
-        border-right: 1px dotted darkgray;
-        border-bottom: 1px dotted darkgray;
-        padding: 5% 2%;
+        padding: 2% 0% 8%;
         width: 90%;
         scrollbar-width: auto;
         font-size: 12.5px;
     }
     .mL6Item3Container{
-        font-size: 8px;
+        font-size: 12px;
         font-weight: bold;
     }
     .mL6ItemsContainer2{
@@ -934,16 +938,16 @@ button{
         padding-left: 2%;
     }
     .adresseFooter{
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .adresseFooter>div{
         display: flex;
-        margin-bottom: 4%;
+        margin-bottom: 5%;
     }
     .adresseFooter>div>img{
         width: 15px;
         height: auto;
-        margin-right: 5%;
+        margin-right: 2.5%;
     }
     .adresseFooter>div>span{
         font-size: 10px;
