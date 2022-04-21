@@ -486,6 +486,7 @@ button{
     }
     .mL6Item3Container{
         font-size: 8px;
+        padding-top: 9%;
         font-weight: bold;
     }
     .mL6ItemsContainer2{
@@ -508,7 +509,7 @@ button{
         font-size: 10px;
     }
     .mL6Item6Container{
-        margin-top: 50%;
+        margin-top: 10%;
         margin-left: 58%;
     }
     .mL6Item6Container img{
