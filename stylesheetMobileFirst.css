@@ -232,7 +232,7 @@ button{
     .priceImgContainer{
         width: 25%;
         position: absolute;
-        translate: 60% -75%;
+        translate: 30% -75%;
         z-index: 2;
         padding-left: 15%;
     }
@@ -683,7 +683,7 @@ button{
     .priceImgContainer{
         width: 25%;
         position: absolute;
-        translate: 60% -75%;
+        translate: 15% -75%;
         z-index: 2;
         padding-left: 15%;
     }
@@ -1074,7 +1074,7 @@ button{
     .priceImgContainer{
         width: 25%;
         position: absolute;
-        translate: 60% -75%;
+        translate: 10% -75%;
         z-index: 2;
         padding-left: 15%;
     }
