@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'futuraBold';
+    src: url('./fonts/futura/Futura\ Bold\ font.ttf');
+}
+main::before{
+    content:'Nike';
+    color: #adff0896;
+    font-size: 225pt;
+    font-weight: bold;
+    font-style: italic;
+    font-family: futuraBold;
+    position: absolute;
+    top: 25%;
+    left: -20%;
+    opacity: .1;
+}
+main{
+    position: relative;
+    background: rgb(44, 44, 44);
+    background-size: 200%;
+    background-position: 50%;
+    width: 400px;
+    height: 500px;
+    margin: 5% auto;
+    overflow: hidden;
+}
+.partHaut{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    font-family: futuraBold;
+    
+}
+.partHaut:hover{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    font-family: futuraBold;
+    translate: 0 -10%;
+    transition: translate .7s ease-in-out;
+    margin-bottom: 50%;
+}
+.partHaut:hover .rond{
+    transform: translateX(0) translateY(-15%) scale(1.5);
+    transition: transform .7s ease-in-out;
+}
+.rond{
+    display: inline-block;
+    padding: 45%;
+    background: #b7f435;
+    border-radius: 50%;
+    translate: 20% -20%;
+    z-index: 1;
+}
+.imageContainer>img{
+    width: 100%;
+}
+.imageContainer{
+    display: inline-block;
+    z-index: 2;
+    rotate: -30deg;
+    width: 75%;
+    bottom: 35%;
+    translate: 15% -108%;
+}
+.partHaut:hover .imageContainer{
+    transform: translateX(15%) translateY(-30%);
+    transition: transform .7s ease-in-out;
+}
+.titleContainer{
+    font-size: 25pt;
+    color: white;
+    transform: translateY(-90pt);
+    opacity: .9;
+}
+.sizeLine,
+.colorLine,
+.btnCont{
+    margin-top: 5%;
+    color: whitesmoke;
+    opacity: .9;
+}
+.sizeLine{
+    width: 100%;
+}
+.sizeLine span, .colorLine span{
+    margin: 1%;
+}
+.sizeLineSpan2 span{
+    display: inline-block;
+    color: black;
+    background-color: whitesmoke;
+    width: 25pt;
+    height: 20pt;
+    padding: 2% 0 0;
+    margin-left: 1.5%;
+    border-radius: 5pt;
+}
+.colorLineSpan2 span{
+    padding: 1.5% 4%;
+    background: rgba(184, 244, 53, 0.9);
+    margin-left: 1.5%;
+    border-radius: 50%;
+}
+.colorLineSpan2 span:nth-child(2){
+    background: rgba(0, 0, 255, 0.9);
+}
+.colorLineSpan2 span:last-child{
+    background: rgba(255, 0, 0, 0.9);
+}
+.btnCont button{
+    border: none;
+    margin-top: 1.5%;
+    transform: translateY(5pt);
+    padding: 3% 6%;
+    font-weight: bold;
+    border-radius: 2.5pt;
+}
+.partHaut:hover .titleContainer{
+    transform: translateY(-130pt);
+    transition: transform .7s ease-in-out;
+}
+.partHaut:hover .sizeLine,
+.partHaut:hover .colorLine,
+.partHaut:hover .btnCont{
+    transform: translateY(-130pt);
+    transition: transform .7s ease-in-out;
+}
