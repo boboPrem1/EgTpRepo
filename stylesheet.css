@@ -1,0 +1,1166 @@
+body,header, main, footer{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+    
+    .card-xs{
+        
+        box-shadow: 0 0 20px 5px rgba(128, 128, 128, 0.3);
+        border-radius: 15pt;
+        padding: 2%;
+    }
+    header{
+        background-image: url(./assets/images/headerBack.png);
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+    }
+    .headerMainContainer{ 
+        height: 100%;   
+        background: linear-gradient(to bottom, hsla(46, 50%, 25%, 0.5), transparent);
+    }
+    .headerMainContainer img{
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+    .navbarItem1{
+        width: 50%;
+    }
+    .logoContainer{
+        width: 55%;
+        margin-left: 5%;
+    }
+    .logoContainer img{
+        width: 100%;
+    }
+    .navbarItem2{
+        display: block;
+        position: absolute;
+        bottom: -45%;
+        left: 5%;
+        right: 5%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 12.5pt;
+        color: #fff;
+    }
+    .navbarItem3{
+        width: 50%;
+    }
+    .searchIconContainer{
+        display: flex;
+        justify-content: space-around;
+        background: #ffc200;
+        width: 90%;
+        margin: 5% auto 0;
+        padding: 2% 0;
+        border-radius: 25pt;
+    }
+    .searchIconContainer input{
+        width: 80%;
+        border: none;
+        background: transparent;
+        outline: none;
+        padding: 1% 5%;
+    }
+    .searchIconContainer img{
+        width: 8.5%;
+        height: 8.5%;
+        padding: 1% 4% 0;
+    }
+    .headerRow{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .headerRowContent{
+        width: 42.5%;
+        padding: 0%;
+    }
+    .headerRowContent span{
+        display: block;
+        margin: 2.5% 0 5%;
+    }
+    .titleContainer{
+        font-size: 20pt;
+        color: #ffc200;
+        font-weight: bold;
+    }
+    .descHeaderTitle{
+        font-size: 10pt;
+        color: #fff;
+        padding-right: 5%;
+    }
+    .orderNow{
+        background: #ffc200;
+        border: none;
+        padding: 2% 5%;
+        margin-bottom: 0%;
+        border-radius: 2.5pt;
+        font-weight: bold;
+        color: #333333;
+    }
+
+    .mainRow1{
+        text-align: center;
+    }
+    .mainR1TitleContainer{
+        padding: 2%;
+        font-size: 20pt;
+    }
+    .mainR1TitleDesc{
+        padding: 1% 12.5%;
+    }
+    .titleDesc{
+        font-size: 11.5pt;
+    }
+    .menuItem{
+        width: 70%;
+        margin: 5% auto;
+    }
+    .menuImgContainer{
+        width: 100%;
+    }
+    .menuImgContainer img{
+        width: 60%;
+        border-radius: 50%;
+        padding: 2.5% 0;
+    }
+    .menuTitle{
+        font-size: 15pt;
+    }
+    .menuDescContainer{
+        padding: 1% 10%;
+    }
+    .menuDesc{
+        font-size: 12.5;
+    }
+
+    .mainRow2{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/originalTaste.png);
+        background-size: 100%;
+        width: 72.5%;
+        margin: auto;
+        padding: 0;
+    }
+    .mainRow2 img{
+        width: 80%;
+    }
+    .mainR2Item{
+        width: 100%;
+    }
+    .mainRow2 .mainR2Item:first-child{
+        display: none;
+    }
+    .mainRow2 .mainR2Item:last-child{
+        width: 80%;
+        margin: auto;
+        padding: 10%;
+        height: 225px;
+        text-align: center;
+        background-color: hsla(25, 100%, 0%,.5);
+    }
+    .mainRow2 .mainR2Item:last-child div{
+        margin-bottom: 10%;
+    }
+    .mR2ITitleContainer{
+        font-size: 25pt;
+        color: #ffc200;
+    }
+    .mR2IDesc{
+        color: #ffffff;
+    }
+    .mR2ItemBtnContainer{
+        margin-top: 15%;
+        padding: 5%;
+    }
+
+    .mainRow3{
+        width: 70%;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .mainRow3 div{
+        margin-bottom: 10%;
+    }
+    .mainR3TitleContainer{
+        font-size: 25pt;
+        padding: 5% 0 0;
+    }
+    .mainR3DescContainer{
+        padding: 0 7.5%;
+    }
+    .statsItem{
+        width: 150px;
+        height: 150px;
+        border: 5px solid #ffc200;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #333333;
+    }
+    .statsItemNumber{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .statsItemDesc{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .mainRow4{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/chikenGrill.png);
+        background-size: 100%;
+        width: 72.5%;
+        margin: auto;
+        padding: 0;
+    }
+    .mainRow4 img{
+        width: 80%;
+    }
+    .mainR4Item{
+        width: 100%;
+    }
+    .mainRow4 .mainR4Item:last-child{
+        display: none;
+    }
+    .mainRow4 .mainR4Item:first-child{
+        width: 80%;
+        margin: auto;
+        padding: 10%;
+        height: 225px;
+        text-align: center;
+        background-color: hsla(25, 100%, 0%,.5);
+    }
+    .mainRow4 .mainR4Item:last-child div{
+        margin-bottom: 10%;
+    }
+    .mR4ITitleContainer{
+        font-size: 25pt;
+        color: #ffc200;
+    }
+    .mR4IDesc{
+        color: #ffffff;
+    }
+    .mR4ItemBtnContainer{
+        margin-top: 15%;
+        padding: 5%;
+    }
+
+    .mainRow5{
+        margin: 5% auto;
+        padding: 0;
+        width: 75%;
+        text-align: center;
+        background-image: url(./assets/images/lenoraFieldsImg.png);
+        background-size: 175%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .mainRow5 div div{
+        margin: 10% 0;
+    }
+    .mR5MainContainer{
+        margin: 0;
+        width: 100%;
+        padding: 10% 0;
+        background-image: url(./assets/images/lenoraFieldsShape.png);
+        opacity: 60%;
+    }
+    .mR5Main{
+        margin: auto;
+    }
+    .mainR5Citation{
+        font-size: 12.5pt;
+        padding: 10%;
+    }
+    .mainR5Author{
+        font-size: 17.5pt;
+    }
+
+    .suscribe{
+        width: 100%;
+        margin: 10% 0;
+        text-align: center;
+    }
+    .suscribe div{
+        margin: 5% 0;
+    }
+    .suscribeTitleCont{
+        font-size: 25pt;
+    }
+    .suscribeDescCont{
+        font-size: 12.5;
+        padding: 0 12.5%;
+    }
+    .formCont{
+        display: flex;
+        color: #333333;
+        border-radius: 0;
+        padding: 0;
+    }
+    .suscribeFormCont{
+        width: 65%;
+        padding: 0 17.5%;
+    }
+    .suscribeFormCont div span{
+        display: inline-block;
+    }
+    .InputContainer{
+        width: 70%;
+    }
+    .InputContainer input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 1.5%;
+    }
+    .susFormBtn{
+        width: 30%;
+        background: #ffc200;
+        padding: 1.5%;
+    }
+
+    footer{
+        width: 90%;
+        padding: 2.5% 5%;
+        background: #333333;
+        color: #ffffff;
+    }
+    .fPTitleContainer{
+        padding: 2.5%;
+        font-size: 15pt;
+    }
+    .fPDescContainer{
+        margin: 5%;
+        font-size: 12pt;
+    }
+    .iconsContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .iconContainer img{
+        height: 20px;
+        width: 20px;
+    }
+    .iconContainer{
+        margin: 0 1%;
+    }
+    footer ul{
+        list-style-type: square;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card-xs{
+        
+        box-shadow: 0 0 20px 5px rgba(128, 128, 128, 0.3);
+        border-radius: 15pt;
+        padding: 2%;
+    }
+    header{
+        background-image: url(./assets/images/headerBack.png);
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+    .headerMainContainer{ 
+        height: 100%;   
+        background: linear-gradient(to bottom, hsla(46, 50%, 25%, 0.5), transparent);
+    }
+    .headerMainContainer img{
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+    .navbarItem1{
+        width: 50%;
+    }
+    .logoContainer{
+        width: 55%;
+        margin-left: 5%;
+    }
+    .logoContainer img{
+        width: 100%;
+    }
+    .navbarItem2{
+        display: block;
+        position: absolute;
+        bottom: -45%;
+        left: 5%;
+        right: 5%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 20pt;
+        color: #fff;
+    }
+    .navbarItem3{
+        width: 50%;
+    }
+    .searchIconContainer{
+        display: flex;
+        justify-content: space-around;
+        background: #ffc200;
+        width: 90%;
+        margin: 5% auto 0;
+        padding: 2% 0;
+        border-radius: 25pt;
+    }
+    .searchIconContainer input{
+        width: 80%;
+        border: none;
+        background: transparent;
+        outline: none;
+        padding: 1% 5%;
+    }
+    .searchIconContainer img{
+        width: 8.5%;
+        height: 8.5%;
+        padding: 1% 4% 0;
+    }
+    .headerRow{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .headerRowContent{
+        width: 45%;
+        padding: 0%;
+    }
+    .headerRowContent span{
+        display: block;
+        margin: 2.5% 0 5%;
+    }
+    .titleContainer{
+        font-size: 30pt;
+        color: #ffc200;
+        font-weight: bold;
+    }
+    .descHeaderTitle{
+        font-size: 15pt;
+        color: #fff;
+        padding-right: 5%;
+    }
+    .orderNow{
+        background: #ffc200;
+        border: none;
+        padding: 5% 12.5%;
+        margin-top: 6%;
+        border-radius: 2.5pt;
+        font-weight: bold;
+        color: #333333;
+        font-size: 12.5pt;
+    }
+
+    .mainRow1{
+        text-align: center;
+    }
+    .mainR1TitleContainer{
+        padding: 2.5%;
+        font-size: 30pt;
+    }
+    .mainR1TitleDesc{
+        padding: 1% 12.5%;
+    }
+    .titleDesc{
+        font-size: 15pt;
+    }
+    .menuItem{
+        width: 70%;
+        margin: 5% auto;
+    }
+    .menuImgContainer{
+        width: 100%;
+    }
+    .menuImgContainer img{
+        width: 50%;
+        border-radius: 50%;
+        padding: 2.5% 0;
+    }
+    .menuTitle{
+        font-size: 20pt;
+    }
+    .menuDescContainer{
+        padding: 1% 10%;
+        font-size: 15pt;
+    }
+    .menuDesc{
+        font-size: 12.5;
+    }
+
+    .mainRow2{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/originalTaste.png);
+        background-size: 100%;
+        width: 72.5%;
+        margin: auto;
+        padding: 0;
+    }
+    .mainRow2 img{
+        width: 80%;
+    }
+    .mainR2Item{
+        width: 100%;
+    }
+    .mainRow2 .mainR2Item:first-child{
+        display: none;
+    }
+    .mainRow2 .mainR2Item:last-child{
+        width: 80%;
+        margin: auto;
+        padding: 10%;
+        height: 225px;
+        text-align: center;
+        background-color: hsla(25, 100%, 0%,.5);
+    }
+    .mainRow2 .mainR2Item:last-child div{
+        margin-bottom: 5%;
+    }
+    .mR2ITitleContainer{
+        font-size: 30pt;
+        color: #ffc200;
+    }
+    .mR2IDesc{
+        color: #ffffff;
+        font-size: 15pt;
+    }
+    .mR2ItemBtnContainer{
+        margin-top: 0%;
+        padding: 5%;
+    }
+
+    .mainRow3{
+        width: 70%;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .mainRow3 div{
+        margin-bottom: 5%;
+    }
+    .mainR3TitleContainer{
+        font-size: 30pt;
+        padding: 5% 0 0;
+    }
+    .mainR3DescContainer{
+        padding: 0 7.5%;
+        font-size: 14pt;
+    }
+    .statsItemsDiv{
+        display: flex;
+    }
+    .statsItem{
+        width: 150px;
+        height: 150px;
+        border: 5px solid #ffc200;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #333333;
+    }
+    .statsItemNumber{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .statsItemDesc{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .mainRow4{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/chikenGrill.png);
+        background-size: 100%;
+        width: 72.5%;
+        margin: auto;
+        padding: 0;
+    }
+    .mainRow4 img{
+        width: 80%;
+    }
+    .mainR4Item{
+        width: 100%;
+    }
+    .mainRow4 .mainR4Item:last-child{
+        display: none;
+    }
+    .mainRow4 .mainR4Item:first-child{
+        width: 80%;
+        margin: auto;
+        padding: 10%;
+        height: 225px;
+        text-align: center;
+        background-color: hsla(25, 100%, 0%,.5);
+    }
+    .mainRow4 .mainR4Item:last-child div{
+        margin-bottom: 10%;
+    }
+    .mR4ITitleContainer{
+        font-size: 30pt;
+        color: #ffc200;
+    }
+    .mR4IDesc{
+        color: #ffffff;
+        font-size: 15pt;
+    }
+    .mR4ItemBtnContainer{
+        margin: 0;
+        padding: 5%;
+    }
+
+    .mainRow5{
+        margin: 5% auto;
+        padding: 0;
+        width: 75%;
+        text-align: center;
+        background-image: url(./assets/images/lenoraFieldsImg.png);
+        background-size: 175%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .mainRow5 div div{
+        margin: 10% 0;
+    }
+    .mR5MainContainer{
+        margin: 0;
+        width: 100%;
+        padding: 10% 0;
+        background-image: url(./assets/images/lenoraFieldsShape.png);
+        opacity: 60%;
+    }
+    .mR5Main{
+        margin: 0 auto;
+    }
+    .mainR5Citation{
+        font-size: 17.5pt;
+        padding: 0 10%;
+        margin: 0;
+    }
+    .mainR5Author{
+        font-size: 17.5pt;
+    }
+
+    .suscribe{
+        width: 100%;
+        margin: 10% 0;
+        text-align: center;
+    }
+    .suscribe div{
+        margin: 5% 0;
+    }
+    .suscribeTitleCont{
+        font-size: 30pt;
+    }
+    .suscribeDescCont{
+        font-size: 15pt;
+        padding: 0 15%;
+    }
+    .formCont{
+        display: flex;
+        color: #333333;
+        border-radius: 0;
+        padding: 0;
+    }
+    .suscribeFormCont{
+        width: 65%;
+        padding: 0 17.5%;
+    }
+    .suscribeFormCont div span{
+        display: inline-block;
+    }
+    .InputContainer{
+        width: 70%;
+    }
+    .InputContainer input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 2.5%;
+    }
+    .susFormBtn{
+        width: 30%;
+        background: #ffc200;
+        padding: 1.5%;
+    }
+
+    footer{
+        width: 90%;
+        padding: 3% 5%;
+        background: #333333;
+        color: #ffffff;
+        position: relative;
+    }
+    .fPTitleContainer{
+        padding: .5%;
+        font-size: 15pt;
+    }
+    .fPDescContainer{
+        margin: 5%;
+        font-size: 15pt;
+    }
+    .iconsContainer{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        right: 40%;
+    }
+    .iconContainer img{
+        height: 25px;
+        width: 25px;
+    }
+    .iconContainer{
+        margin: 0 1%;
+    }
+    .idemPart{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer ul{
+        list-style-type: none;
+    }
+    footer li{
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    header{
+        background-image: url(./assets/images/headerBack.png);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .headerMainContainer{ 
+        height: 100%;   
+        background: linear-gradient(to bottom, hsla(46, 50%, 25%, 0.5), transparent);
+    }
+    .headerMainContainer img{
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+    .navbarItem1{
+        width: 25%;
+    }
+    .logoContainer{
+        width: 55%;
+        margin-left: 5%;
+    }
+    .logoContainer img{
+        width: 100%;
+    }
+    .navbarItem2{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 30pt;
+        color: #fff;
+        width: 40%;
+        margin-left: 25%;
+    }
+    .navbarItem2>span{
+        display: inline-block;
+        margin-top: 2.5%;
+    }
+    .navbarItem3{
+        width: 10%;
+    }
+    .searchIconContainer{
+        display: flex;
+        justify-content: space-around;
+        height: 55px;
+        width: 55px;
+        margin: 7.5% auto 0;
+        border-radius: 25pt;
+    }
+    .searchIconContainer input{
+        display: none;
+    }
+    .searchIconContainer img{
+        width: 60%;
+        height: 60%;
+        padding: 1% 4% 0;
+        margin: auto;
+    }
+    .headerRow{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .headerRowContent{
+        width: 45%;
+        padding: 0%;
+    }
+    .headerRowContent span{
+        display: block;
+        margin: 2.5% 0 5%;
+    }
+    .titleContainer{
+        font-size: 50pt;
+        color: #ffc200;
+        font-weight: bold;
+    }
+    .descHeaderTitle{
+        font-size: 30pt;
+        color: #fff;
+        padding-right: 5%;
+    }
+    .orderNow{
+        background: #ffc200;
+        border: none;
+        padding: 3% 12.5%;
+        margin-top: 2%;
+        border-radius: 2.5pt;
+        font-weight: bold;
+        color: #333333;
+        font-size: 12.5pt;
+    }
+
+    .mainRow1{
+        text-align: center;
+    }
+    .treeMenuRow{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mainR1TitleContainer{
+        padding: 2.5%;
+        font-size: 30pt;
+    }
+    .mainR1TitleDesc{
+        padding: 1% 12.5%;
+    }
+    .titleDesc{
+        font-size: 20pt;
+    }
+    .menuItem{
+        width: 70%;
+        margin: 5% auto;
+    }
+    .menuImgContainer{
+        width: 100%;
+    }
+    .menuImgContainer img{
+        width: 50%;
+        border-radius: 50%;
+        padding: 2.5% 0;
+    }
+    .menuTitle{
+        font-size: 20pt;
+    }
+    .menuDescContainer{
+        padding: 1% 20%;
+        font-size: 18pt;
+    }
+    .menuDesc{
+        font-size: 12.5;
+    }
+
+    .mainRow2{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/vectorSmatchBeforeStats.png);
+        background-size: 120%;
+        background-position: center top;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        display: flex;
+
+    }
+    .mainRow2 img{
+        width: 100%;
+    }
+    .mainRow2 .mainR2Item:first-child{
+        /* display: none; */
+        width: 25%;
+        margin: 7.5% 0 0 15%;
+    }
+    .imgLeftOriental{
+        border-radius: 50%;
+    }
+    .mainRow2 .mainR2Item:last-child{
+        width: 45%;
+        margin-left: 5%;
+        padding: 10% 15%;
+        height: 225px;
+        text-align: left;
+        /* background-color: hsla(25, 100%, 0%,.5); */
+    }
+    .mainRow2 .mainR2Item:last-child div{
+        margin-bottom: 5%;
+    }
+    .mR2ITitleContainer{
+        font-size: 40pt;
+        color: #ffc200;
+    }
+    .mR2IDesc{
+        color: #ffffff;
+        font-size: 20pt;
+    }
+    .mR2ItemBtnContainer{
+        margin: 0%;
+        padding: 5% 5% 5% 0;
+    }
+
+    .mainRow3{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-image: url(./assets/images/statistiquesBack.png);
+        background-size: 100%;
+    }
+    .mainRow3 div{
+        margin-bottom: 5%;
+    }
+    .mainRow3 div:nth-child(3){
+        margin-bottom: 0;
+    }
+    .mainR3TitleContainer{
+        font-size: 45pt;
+        padding: 5% 0 0;
+        color: #ffc200;
+    }
+    .mainR3DescContainer{
+        padding: 0 30%;
+        font-size: 20pt;
+        color: #ffffff;
+    }
+    .statsItemsContainer{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .statsItemsDiv{
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+    }
+    .statsItem{
+        width: 200px;
+        height: 200px;
+        border: 5px solid #ffffff;
+        border-radius: 50%;
+        margin: 2%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #333333;
+    }
+    .statsItemNumber{
+        font-weight: bold;
+        font-size: 40pt;
+        color: #ffc200
+    }
+    .statsItemDesc{
+        font-weight: bold;
+        font-size: 22.5pt;
+        color: #ffffff;
+    }
+
+    .mainRow4{
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/images/vectorSmatchAfterStats.png);
+        background-size: 120%;
+        background-position: center bottom;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 10%;
+        display: flex;
+    }
+    .mainRow4 img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    .mainR4Item{
+        width: 50%;
+        display: inline-block;
+    }
+    .mainRow4 .mainR4Item:last-child{
+        padding-top: 0;
+        padding-left: 30%;
+        width: 50%;
+    }
+    .mainRow4 .mainR4Item:first-child{
+        width: 40%;
+        margin-left: 15%;
+        /* padding: 10%; */
+        height: 225px;
+        text-align: left;
+        /* background-color: hsla(25, 100%, 0%,.5); */
+    }
+    .mainRow4 .mainR4Item:last-child div{
+        width: 60%;
+    }
+    .mainRow4 .mainR4Item:first-child div{
+        margin-top: 5%;
+    }
+    .mR4ITitleContainer{
+        font-size: 45pt;
+        color: #ffc200;
+    }
+    .mR4IDesc{
+        color: #ffffff;
+        font-size: 20pt;
+    }
+    .mR4ItemBtnContainer{
+        margin: 0;
+        padding: 5% 5% 5% 0;
+    }
+
+    .mainRow5{
+        margin: 5% auto;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        background-image: url(./assets/images/lenoraFieldsImg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .mainRow5 div div{
+        margin: 10% 0;
+    }
+    .mR5MainContainer{
+        margin: 0;
+        width: 100%;
+        padding: 10% 0;
+        background-image: url(./assets/images/lenoraFieldsShape.png);
+        opacity: 60%;
+    }
+    .mR5Main{
+        margin: 0 auto;
+    }
+    .mainR5Citation{
+        font-size: 25pt;
+        padding: 0 32.5%;
+        margin: 0;
+    }
+    .mainR5Author{
+        font-size: 22.5pt;
+        font-weight: bold;
+    }
+
+    .suscribe{
+        width: 100%;
+        margin: 10% 0;
+        text-align: center;
+    }
+    .suscribe div{
+        margin: 5% 0;
+    }
+    .suscribeTitleCont{
+        font-size: 45pt;
+    }
+    .suscribeDescCont{
+        font-size: 20pt;
+        padding: 0 20%;
+    }
+    .formCont{
+        display: flex;
+        color: #333333;
+        border-radius: 5pt;
+        padding: 0;
+        box-shadow: 0 0 30px 5px hsla(0, 0%, 50%, 0.4);
+    }
+    .suscribeFormCont{
+        width: 65%;
+        padding: 0 17.5%;
+    }
+    .suscribeFormCont div span{
+        display: inline-block;
+    }
+    .InputContainer{
+        width: 70%;
+    }
+    .InputContainer input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 2.5%;
+    }
+    .susFormBtn{
+        width: 30%;
+        background: #ffc200;
+        padding: 1.5%;
+    }
+
+    footer{
+        width: 90%;
+        padding: 8% 5%;
+        background: #333333;
+        color: #ffffff;
+        position: relative;
+    }
+    .footerMainContainner{
+        display: flex;
+    }
+    .fPTitleContainer{
+        padding: .5%;
+        font-size: 25pt;
+    }
+    .fPDescContainer{
+        margin: 5% 5% 5% 0;
+        font-size: 20pt;
+    }
+    .iconsContainer{
+        display: flex;
+        justify-content: left;
+    }
+    .iconContainer img{
+        height: 25px;
+        width: 25px;
+        margin-right: 2.5%;
+    }
+    .iconContainer{
+        margin: 0 1%;
+    }
+    .idemPart{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    footer li{
+        margin-bottom: 1%;
+        font-size: 17.5pt;
+    }
+}
