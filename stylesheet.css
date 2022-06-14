@@ -9,7 +9,7 @@ a{
     cursor: pointer;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 799px){
     
     .card-xs{
         
@@ -371,7 +371,7 @@ a{
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
     .card-xs{
         
         box-shadow: 0 0 20px 5px rgba(128, 128, 128, 0.3);
