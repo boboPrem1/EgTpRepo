@@ -362,7 +362,7 @@ function getStorageValues(){
     if(localStorage.personnes){
         let existants = JSON.parse(localStorage.personnes);
         if(localStorage.niveauId){
-            idTable = parseInt(JSON.parse(localStorage.niveauId)) + 1;
+            idTable = parseInt(JSON.parse(localStorage.niveauId));
         }
 
         existants.forEach(elmt => insertInDom(elmt)); 
@@ -370,6 +370,7 @@ function getStorageValues(){
     }
 }
 getStorageValues();
+
 var elementsInseres = document.querySelectorAll('div.TableLinesContainer>.tableHeadContainer');
 // console.log(elementsInseres);
 var nbrPersonnes = elementsInseres.length;
@@ -440,7 +441,7 @@ function insertInDom(infosUser){
             <span id="sexeCont">${infosUser.sexe}</span>
         </div>
         <div class="tableColumn td5" style="display:none;">
-            <span id="sexeCont">${infosUser.com}</span>
+            <span id="comCont">${infosUser.com}</span>
         </div>
         <div class="tableColumn td10">
             <span><i class="fa-solid fa-pencil" onclick="modifPerson(event)"></i></span>
@@ -599,7 +600,9 @@ function modifPerson(event){
     dataToModifie.phone = elmt.children[6].children[0].textContent;
     dataToModifie.sexe = elmt.children[7].children[0].textContent;
     dataToModifie.com = elmt.children[8].children[0].textContent;
-    headerOps.showModal('modifPerson');
+    // headerOps.showModal('modifPerson');
+    console.log(elmt.children[8].children[0].textContent);
+
 
     let inputModif = document.querySelectorAll('.inputToModifie');
     let saveBtn = document.querySelector('#saveModifBtn');
