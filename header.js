@@ -420,28 +420,28 @@ function insertInDom(infosUser){
         <span><input type="checkbox" name="" class="checkLine"></span>
         </div>
         <div class="tableColumn td10">
-            <span id="idCont">${infosUser.id}</span>
+            <span id="idCont${infosUser.id}">${infosUser.id}</span>
         </div>
         <div class="tableColumn td15">
-            <span id="nomCont">${infosUser.nom}</span>
+            <span id="nomCont${infosUser.id}">${infosUser.nom}</span>
         </div>
         <div class="tableColumn td15">
-            <span id="prenomCont">${infosUser.prenoms}</span>
+            <span id="prenomCont${infosUser.id}">${infosUser.prenoms}</span>
         </div>
         <div class="tableColumn td10">
-            <span id="naissanceCont">${infosUser.dateNaissance}</span>
+            <span id="naissanceCont${infosUser.id}">${infosUser.dateNaissance}</span>
         </div>
         <div class="tableColumn td15">
-            <span id="emailCont">${infosUser.email}</span>
+            <span id="emailCont${infosUser.id}">${infosUser.email}</span>
         </div>
         <div class="tableColumn td15">
-            <span id="phoneCont">${infosUser.phone}</span>
+            <span id="phoneCont${infosUser.id}">${infosUser.phone}</span>
         </div>
         <div class="tableColumn td5">
-            <span id="sexeCont">${infosUser.sexe}</span>
+            <span id="sexeCont${infosUser.id}">${infosUser.sexe}</span>
         </div>
         <div class="tableColumn td5" style="display:none;">
-            <span id="comCont">${infosUser.com}</span>
+            <span id="comCont${infosUser.id}">${infosUser.com}</span>
         </div>
         <div class="tableColumn td10">
             <span><i class="fa-solid fa-pencil" onclick="modifPerson(event)"></i></span>
@@ -600,7 +600,7 @@ function modifPerson(event){
     dataToModifie.phone = elmt.children[6].children[0].textContent;
     dataToModifie.sexe = elmt.children[7].children[0].textContent;
     dataToModifie.com = elmt.children[8].children[0].textContent;
-    // headerOps.showModal('modifPerson');
+    headerOps.showModal('modifPerson');
     console.log(elmt.children[8].children[0].textContent);
 
 
