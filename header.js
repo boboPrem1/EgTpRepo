@@ -2,6 +2,7 @@
 // let nbrPersonnes = null;
 let idTable = 0;
 let dataToModifie = {};
+let affichage = null;
 class HeaderOps{
     constructor(){
 
@@ -309,7 +310,7 @@ class HeaderOps{
     </div>
     <div class="aMInputContainer">
         <span class="aMinput">
-            <textarea type="tel" name="inputCom" value="${dataToModifie.com}" placeholder="Entrez Votre Commentaire ..." id="aMComInput"></textarea>
+            <textarea type="tel" name="inputCom" class="inputToModifie" value="" placeholder="Entrez Votre Commentaire ..." id="aMComInput">${dataToModifie.com}</textarea>
         </span>
     </div>
 </div>
@@ -325,6 +326,48 @@ class HeaderOps{
 </div>
 </div>
 </form>`;
+        let forAffiche = `<div class="modalHeader">
+        <div class="leftPart"><span class="modalTitle">User ${affichage.id}</span></div>
+        <div class="middlePart"></div>
+        <div class="rightPart">
+            <span class="iconContainer" onclick="headerOps.destructModal()">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </span>
+        </div>
+    </div>
+    <div class="modalMain">
+        <div class="modalMainRow">
+            <div class="profilImgContainer">
+                <img src="./Assets/images/YoWEB-20211118232653.jpg" alt="" class="profilImg">
+            </div>
+            <div class="nomPrenomsContainer">
+                <div class="elmts">
+                    <span class="nomContainer">Nom:</span><span>${affichage.nom}</span>
+                </div>
+                <div class="elmts">
+                    <span class="prenomContainer">Prénom:</span><span id="prenomContainer">${affichage.prenoms}</span>
+                </div>
+            </div>
+        </div>
+        <div class="mainMiddleRow elmts">
+            <span class="dateNaissance">Date de Naissance:</span><span>${affichage.date}</span>
+        </div>
+        <div class="mainMiddleRow  elmts">
+            <span class="adresseEmail">Adresse Email:</span><span>${affichage.email}</span>
+        </div>
+        <div class="mainMiddleRow  elmts">
+            <span class="phone">Phone:</span><span>${affichage.phone}</span>
+        </div>
+        <div class="mainMiddleRow  elmts">
+            <span class="sexe">Sexe:</span><span>${affichage.sexe}</span>
+        </div>
+        <div class="mainMiddleRow  elmts">
+            <span class="commentaire">Commentaire:</span><textarea disabled="disabled">${affichage.com}</textarea>
+        </div>
+    </div>
+    <div class="mainFoot">
+            <span class="modalModifBtn">Modifier</span>
+    </div>`;
     let element = document.querySelector('.modalContainer');
     let elementSon = document.querySelector('.modal');
         if(modal === 'profilUser'){
@@ -333,6 +376,8 @@ class HeaderOps{
             htmlToInsert = forAdd;
         } else if(modal === 'modifPerson'){
             htmlToInsert = forModifie;
+        } else if(modal === 'forAffiche'){
+            htmlToInsert = forAffiche;
         }
         
     elementSon.innerHTML = htmlToInsert;
@@ -558,24 +603,29 @@ function deleteChecked(){
 
 function eyeClicked(event){
     let seeState = event.target.parentNode.parentNode.parentNode;
-    seeState.classList.toggle('hideLine');
-    setTimeout(() => seeState.classList.toggle('none'), 500);
-    let affichage = {
+    // seeState.classList.toggle('hideLine');
+    // setTimeout(() => seeState.classList.toggle('none'), 500);
+    affichage = {
         id: seeState.children[1].children[0].firstChild.data,
         nom: seeState.children[2].children[0].firstChild.data,
         prenoms: seeState.children[3].children[0].firstChild.data,
-        dateNaissance: seeState.children[4].children[0].firstChild.data,
+        dateNaissance: seeState.children[4].children[0].firstChild.textContent,
         email: seeState.children[5].children[0].firstChild.data,
         phone: seeState.children[6].children[0].firstChild.data,
-        sexe: seeState.children[7].children[0].firstChild.data,
+        sexe: seeState.children[7].children[0].firstChild.textContent,
         com: seeState.children[8].children[0].firstChild.data
     }
-    alert(affichage.id);
+    headerOps.showModal('forAffiche');
 }
 
 function mouseOvCom(event){
-    console.log(event);
-    event.target.title = "Text micro, text affichage ...";
+    let com = event.target.parentNode.parentNode.parentNode.children[8].children[0].textContent;
+    if(com.length >= 26){
+        let comMin = com.toString().slice(0, 25) + '...';
+        event.target.title = comMin;
+    } else {
+        event.target.title = com;
+    }
 }
 
 document.querySelector('.AffichAll').onclick = () => {
@@ -601,7 +651,7 @@ function modifPerson(event){
     dataToModifie.sexe = elmt.children[7].children[0].textContent;
     dataToModifie.com = elmt.children[8].children[0].textContent;
     headerOps.showModal('modifPerson');
-    console.log(elmt.children[8].children[0].textContent);
+    console.log(elmt.children[8].children[0].textContent); 
 
 
     let inputModif = document.querySelectorAll('.inputToModifie');
@@ -614,7 +664,8 @@ function modifPerson(event){
         elmt.children[5].children[0].textContent = ManagePersonnes.getElmtValue('#aMEmailInput');
         elmt.children[6].children[0].textContent = ManagePersonnes.getElmtValue('#aMPhoneInput');
         elmt.children[7].children[0].textContent = ManagePersonnes.getElmtValue('#aMSexeInput') == 'm' ? 'Masculin' : (ManagePersonnes.getElmtValue('#aMSexeInput') === 'Féminin' ? 'f' : 'default');
-        elmt.children[8].children[0].textContent = ManagePersonnes.getElmtValue('#aMComInput');
+        elmt.children[8].children[0].textContent = document.querySelector('#aMComInput').value;
+        // console.log(document.querySelector('#aMComInput'));
     }
     inputModif.forEach(element => {
         element.addEventListener("keyup", () => {
@@ -626,12 +677,4 @@ function modifPerson(event){
         insertionMemoire();
         headerOps.destructModal();
     })
-}
-
-function saveUserEntries(){
-
-}
-
-function deleteAll(){
-
 }
