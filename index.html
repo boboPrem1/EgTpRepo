@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Interactif</title>
+</head>
+<body>
+    <header>
+        <div class="headerMainContainer">
+            <div class="headerLeftPart">
+                <span class="dateContainer">dd mmmm aaaa hh:mm:ss</span>
+            </div>
+            <div class="headerRightPart">
+                <span class="circleContainer" onclick="headerOps.showModal('profilUser')"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mMainContainer">
+            <section class="mainRow1">
+                <div class="mR1ItemsContainer">
+                    <div class="searchInputContainer">
+                        <span class="inputContainer"><input type="text" id="search" placeholder="search"/></span>
+                        <span class="searchIconContainer"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <div class="sexeSelectContainer">
+                        <span class="sexeSContainer">
+                            <select name="sexe" id="sexe">
+                                <option value="0">Sexe</option>
+                                <option value="M">Masculin</option>
+                                <option value="F">Féminin</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="mR1ItemsContainer"><button class="AffichAll">Afficher tout</button></div>
+                <div class="mR1ItemsContainer">
+                    <span class="addBtnContainer">
+                        <span class="btn addBtn" onclick="headerOps.showModal('addPerson')">
+                            <i class="fa-solid fa-plus">Ajouter</i>
+                        </span>
+                    </span>
+                    <span class="rmvBtnContainer" onclick="deleteChecked()">
+                        <span class="btn rmvBtn">
+                            <i class="fa-regular fa-trash-can">Supprimer</i>
+                        </span>
+                    </span>
+                </div>
+            </section>
+            <section class="tableRow">
+                <div class="tableHeadContainer">
+                    <div class="tableColumn td5">
+                        <span>#</span>
+                    </div>
+                    <div class="tableColumn td10">
+                        <span>Id</span>
+                    </div>
+                    <div class="tableColumn td15">
+                        <span>Nom</span>
+                    </div>
+                    <div class="tableColumn td15">
+                        <span>Prénom</span>
+                    </div>
+                    <div class="tableColumn td10">
+                        <span>Date Naiscance</span>
+                    </div>
+                    <div class="tableColumn td15">
+                        <span>Adresse Email</span>
+                    </div>
+                    <div class="tableColumn td15">
+                        <span>Phone</span>
+                    </div>
+                    <div class="tableColumn td5">
+                        <span>Sexe</span>
+                    </div>
+                    <div class="tableColumn td10">
+                        <span>Actions</span>
+                    </div>
+                </div>
+                <div class="TableLinesContainer">
+                    <!-- <div class="tableHeadContainer gH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer bH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer gH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer bH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer gH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer bH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer gH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer bH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <div class="tableHeadContainer gH">
+                        <div class="tableColumn td5">
+                            <span><input type="checkbox" name="" id=""></span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>01</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Amouzougan</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>Kangni Juvanio</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span>31 Mai 1999</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>jamouzougan@gmail.com</span>
+                        </div>
+                        <div class="tableColumn td15">
+                            <span>+228 96 85 89 12</span>
+                        </div>
+                        <div class="tableColumn td5">
+                            <span>Masculin</span>
+                        </div>
+                        <div class="tableColumn td10">
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            <span><i class="fa-solid fa-comment"></i></span>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="modalContainer" onclick="headerOps.destructModal()">
+        <div onclick="headerOps.destructModal()">
+            <div class="modal" onclick="eventStop2(event)">
+                <!-- <div class="modalHeader">
+                    <div class="leftPart"><span class="modalTitle">User X</span></div>
+                    <div class="middlePart"></div>
+                    <div class="rightPart">
+                        <span class="iconContainer" onclick="headerOps.destructModal()">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="modalMain">
+                    <div class="modalMainRow">
+                        <div class="profilImgContainer">
+                            <img src="./Assets/images/YoWEB-20211118232653.jpg" alt="" class="profilImg">
+                        </div>
+                        <div class="nomPrenomsContainer">
+                            <div class="elmts">
+                                <span class="nomContainer">Nom:</span><span>Amouzougan</span>
+                            </div>
+                            <div class="elmts">
+                                <span class="prenomContainer">Prénom:</span><span id="prenomContainer">Kangni Juvanio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainMiddleRow elmts">
+                        <span class="dateNaissance">Date de Naissance:</span><span>31/05/1999</span>
+                    </div>
+                    <div class="mainMiddleRow  elmts">
+                        <span class="adresseEmail">Adresse Email:</span><span>jamouzougan@gmail.com</span>
+                    </div>
+                    <div class="mainMiddleRow  elmts">
+                        <span class="phone">Phone:</span><span>+228 96 85 89 12</span>
+                    </div>
+                    <div class="mainMiddleRow  elmts">
+                        <span class="sexe">Sexe:</span><span>Masculin</span>
+                    </div>
+                    <div class="mainMiddleRow  elmts">
+                        <span class="commentaire">Commentaire:</span><textarea disabled="disabled">lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque, labore necessitatibus cupiditate molestiae ipsam.</textarea>
+                    </div>
+                </div>
+                <div class="mainFoot">
+                        <span class="modalModifBtn">Modifier</span>
+                </div> -->
+                <!-- <div class="modalHeader">
+                    <div class="leftPart"><span class="modalTitle">Ajouter</span></div>
+                    <div class="middlePart"></div>
+                    <div class="rightPart">
+                        <span class="iconContainer" onclick="headerOps.destructModal()">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="addModalMain">
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">ID</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="text" name="" value="001" id="aMIdInput" disabled="disabled">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Nom</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="text" name="inputNom" value="Amouzougan" id="aMNomInput">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Prénom.s</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="text" name="inputPrenom" value="Kangni Juvanio" id="aMPrenomInput">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Date de Naissance</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="date" name="inputNaissance" value="" id="aMNaissanceInput">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Adresse Email</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="text" name="inputEmail" value="jamouzougan@gmail.com" id="aMEmailInput">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Phone</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <input type="tel" name="innputPhone" value="+228 96 85 89 12" id="aMPhoneInput">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalRow">
+                        <div class="aMlabelContainer">
+                            <span class="aMLabel">Sexe</span>
+                        </div>
+                        <div class="aMInputContainer">
+                            <span class="aMinput">
+                                <select name="sexeInput" id="aMSexeInput">
+                                    <option value="default">Select Sexe</option>
+                                    <option value="m">Masculin</option>
+                                    <option value="f">Féminin</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="addModalBtnsRow">
+                        <div class="aMBtnContainer">
+                            <span class="btn aMResetBtn" onclick="resetUserEntries()">Reset</span>
+                        </div>
+                        <div class="aMBtnContainer">
+                            <span class="aMBtnContainer">
+                                <span class="btn aMSaveBtn" onclick="getUserEntries()">Save</span>
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./header.js"></script>
+</html>

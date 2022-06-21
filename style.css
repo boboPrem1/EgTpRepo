@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    font-family: 'lato', sans-serif;
+}
+header{
+    width: 100%;
+    background: linear-gradient(to bottom,hsl(6, 70%, 46%),hsl(6, 78%, 25%));
+    padding: 0 0% 1%;
+}
+.headerLeftPart{
+    display: inline-block;
+    color: #ecf0f1;
+    font-size: 25pt;
+    font-weight: bold;
+     width: 40%;
+    padding: 0 5%;
+}
+.headerRightPart{
+    display: inline-block;
+}
+.circleContainer{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    translate: 1400% 20%;
+    background-image: url(./Assets/images/YoWEB-20211118232653.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+main{
+    /* background: #ecf0f1; */
+    padding-top: 5%;
+    overflow-x: scroll;
+}
+.mMainContainer{
+    width: 1100pt;
+    margin: auto;
+    padding: 0%;
+}
+.mainRow1{
+    display: flex;
+    justify-content: space-between;
+}
+.mainRow1>div{
+    width: 30%;
+}
+.mR1ItemsContainer{
+    display: flex;
+}
+.searchInputContainer{
+    width: 50%;
+}
+.searchIconContainer{
+    color: #2980b9;
+    padding: 2% 1% 1%;
+}
+.searchIconContainer i{
+    translate: -150% 0;
+}
+.inputContainer input{
+    border: none;
+    box-shadow: 0 0 1px 1px #2980b9;
+    padding: 2% 1%;
+}
+.sexeSContainer select{
+    border: none;
+    box-shadow: 0 0 1px 1px #2980b9;
+    height: 24px;
+    background: transparent;
+}
+.sexeSelectContainer{
+    margin-left: 0;
+}
+.mR1ItemsContainer:last-child{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    box-shadow: 0 0 1px .5px #34495e;
+    margin:0 30px;
+    height: 24px;
+    width: 100px;
+    padding: 5% 10% 0;
+    text-align: center;
+    font-size: 10pt;
+    border-radius: 2pt;
+    cursor: pointer;
+}
+.addBtn{
+    color: #ecf0f1;
+    background: #2980b9;
+}
+.addBtn:hover{    
+    box-shadow: 0 0 1.5px .5px #34495e;
+}
+.btn:hover{
+    background: linear-gradient(#2980b9,hsl(204, 80%, 35%));
+}
+.mR1ItemsContainer:last-child .rmvBtn{
+    border: 2px solid #e91919;
+    color: #e91919;
+    background: transparent;
+    width: 94px;
+    height: 19.5px;
+}
+.mR1ItemsContainer:last-child .rmvBtn:hover{
+    background: #e91919;
+    color: #ecf0f1;
+    box-shadow: 0 0 1.5px .5px #34495e;
+}
+@keyframes ajoutPersonne {
+    from{
+        scale: .7;
+    }
+    to{
+        scale: 1;
+    }
+}
+.tableHeadContainer{
+    display: flex;
+    width: 100%;
+    color: #212e3b;
+    /* animation: ajoutPersonne .1000ms linear; */
+    
+}
+.fondu{
+    animation: fondu 250ms ease-in-out;
+}
+.bH{
+    background: hsla(204, 70%, 53%, 0.2);
+}
+.gH
+{
+    background: hsla(192, 15%, 94%, 0.8);
+}
+.tableRow{
+    margin-top: 1.5%;
+}
+.tableColumn{
+    border: 1px solid hsla(210, 29%, 40%, .5);
+    text-align: center;
+    padding: .5%;
+    height: 35px;
+}
+.td5{
+    width: 5%;
+}
+.td10{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.td10 span{
+    display: inline-block;
+}
+.td10 span i{
+    color: #34495e;
+    border-radius: 50%;
+    padding: 15% 10% 0;
+    width: 20px;
+    height: 20px;
+}
+.td10 span i:hover{
+    color: #ecf0f1;
+    border-radius: 50%;
+    padding: 15% 10% 0;
+    width: 20px;
+    height: 20px;
+    background:#34495e;
+    cursor: pointer;
+}
+.td10 span:nth-child(3) i{
+    color: hsl(0, 70%, 70%);
+}
+.td10 span:nth-child(3) i:hover{
+    background: hsl(0, 85%, 70%);
+    color: #ecf0f1;
+}
+.td15{
+    width: 15%;
+}
+.td25{
+    width: 25%;
+}
+.TableLinesContainer{
+    color: #34495e;
+}
+
+.modalContainer{
+    position: absolute;
+    background: rgba(24, 23, 23, 0.5);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    color: hsla(210, 28%, 18%, 0.8);
+    display: none;
+}
+.modal{
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 15%;
+    bottom: 15%;
+    background: whitesmoke;
+    border-radius: 10pt;
+    box-shadow: 0 0 30px 5px #34495e;
+    animation: fondu 250ms ease-in-out;
+}
+@keyframes fondu {
+    from{
+        opacity: 0;
+        scale: .5;
+        /* rotate: -.25turn; */
+        translate: 50% -20%;
+    }
+    to{
+        /* rotate: 0turn; */
+        translate: 0 0;
+        opacity: 1;
+        scale: 1;
+    }
+}
+.blk{
+    display: block;
+}
+.modalContainer>div{
+    width: 100%;
+}
+.modalHeader{
+    width: 100%;
+    display: flex;
+    box-shadow: 0 .5px 2px 1px hsla(210, 29%, 29%, 0.5);
+    padding-bottom: 2%;
+    background: linear-gradient(to bottom,hsl(6, 70%, 46%),hsl(6, 78%, 25%));
+    color: whitesmoke;
+
+}
+.modalHeader>div:last-child{
+    width: 20%;
+}
+.modalHeader>div:first-child{
+    width: 60%;
+}
+.modalHeader>div:nth-child(2){
+    width: 10%;
+}
+.modalHeader .rightPart{
+    text-align: end;
+}
+.modal .iconContainer{
+    display: inline-block;
+    padding: 2% 5%;
+    margin-top: 10%;
+    box-shadow: 0 0 0 2px whitesmoke;
+    border-radius: 2pt;
+}
+.modal .fa-xmark{
+    font-size: 30pt;
+}
+.modalHeader .leftPart{
+    text-align: center;
+}
+.modalTitle{
+    display: inline-block;
+    width: 50%;
+    margin: 12.5% auto 0;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.modalMain{
+    overflow: scroll;
+}
+.modalMainRow{
+    padding: 2% 3.5% 0%;
+    display: flex;
+}
+.modalMainRow:first-child{
+    justify-content: space-between;
+}
+.profilImgContainer{
+    width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 10pt;
+}
+.profilImgContainer img{
+    width: 100%;
+}
+.nomPrenomsContainer{
+    width: 70%;
+}
+.mainMiddleRow{
+    padding: 0 .5% .5%;
+    display: flex;
+}
+.elmts{
+    display: block;
+    margin: 6% 2.5%;
+    font-size: 15pt;
+    background: white;
+    padding: 2.5%;
+    border-radius: 5pt;
+    box-shadow: 0 0 2.5px .1px hsla(210, 29%, 29%, 0.2);
+}
+.mainMiddleRow{
+    margin: 2% 4%;
+}
+.elmts span:first-child{
+    display: inline-block;
+    width: 37.5%;
+    text-align: center;
+    padding-right: 2.5%;
+    border-right: 1px solid #34495e;
+}
+.elmts span:last-child{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.elmts:last-child{
+    max-height: 40px;
+}
+.elmts span.commentaire{
+    display: block;
+    border: none;
+    width: 100%;
+    overflow-y: scroll;
+}
+.elmts:last-child span:first-child{
+    text-align: center;
+}
+.elmts:last-child span:last-child{
+    display: block;
+    width: 100%;
+}
+.mainFoot{
+    display: flex;
+    justify-content: space-around;
+}
+.modalModifBtn{
+    display: inline-block;
+    box-shadow: 0 0 1px .5px #34495e;
+    color: #ecf0f1;
+    background: #2980b9;
+    margin: 1% auto;
+    padding: 1% 5%;
+    border-radius: 5pt;
+}
+.modal textarea{
+    border: none;
+    width: 100% !important;
+    height: 25px !important;
+    outline: none;
+}
+#prenomContainer{
+    display: inline-block;
+    width: 50%;
+}
+
+.addModalMain{
+    height: 100%;
+    padding: 0;
+}
+/* .addModalMain *{
+    border: 1px solid black;
+} */
+.addModalMain input, .addModalMain select{
+    padding: 0 2.5%;
+    margin: 2.5% auto 0;
+    width: 100%;
+    height: 70%;
+    border: none;
+    background: transparent;
+}
+.addModalRow{
+    height: 35px;
+    margin: 2.5% auto;
+    padding: 2% 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px #143b5569;
+    background: white;
+    border-radius: 5pt;
+}
+.addModalRow>div{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    
+}
+.addModalRow span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.addModalRow>div.aMlabelContainer{
+    width: 35%;
+    display: inline-flex;
+    justify-content: center;
+}
+.aMlabelContainer>span{
+    margin: 0 auto 0;
+    padding: 10% 0 0;
+    height: 70%;
+    width: 90%;
+    border-right: 2px solid #143b5546;
+}
+.aMInputContainer{
+    width: 50%;
+}
+.addModalBtnsRow{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 5%;
+}
+.addModalBtnRow>span{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.hideLine{
+    transform-origin: 50% 0;
+    transform: scaleY(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.none{
+    display: none;
+}
