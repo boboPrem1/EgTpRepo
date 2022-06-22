@@ -2,7 +2,7 @@
 // let nbrPersonnes = null;
 let idTable = 0;
 let dataToModifie = {};
-let affichage = null;
+let affichage = {};
 class HeaderOps{
     constructor(){
 
@@ -350,7 +350,7 @@ class HeaderOps{
             </div>
         </div>
         <div class="mainMiddleRow elmts">
-            <span class="dateNaissance">Date de Naissance:</span><span>${affichage.date}</span>
+            <span class="dateNaissance">Date de Naissance:</span><span>${affichage.dateNaissance}</span>
         </div>
         <div class="mainMiddleRow  elmts">
             <span class="adresseEmail">Adresse Email:</span><span>${affichage.email}</span>
@@ -612,7 +612,7 @@ function eyeClicked(event){
         dateNaissance: seeState.children[4].children[0].firstChild.textContent,
         email: seeState.children[5].children[0].firstChild.data,
         phone: seeState.children[6].children[0].firstChild.data,
-        sexe: seeState.children[7].children[0].firstChild.textContent,
+        sexe: seeState.children[7].children[0].firstChild.textContent == 'default' ? 'Non Binaire' : seeState.children[7].children[0].firstChild.textContent,
         com: seeState.children[8].children[0].firstChild.data
     }
     headerOps.showModal('forAffiche');
@@ -640,7 +640,7 @@ document.querySelector('.AffichAll').onclick = () => {
 function modifPerson(event){
     console.log(event);
     let elmt = event.target.parentNode.parentNode.parentNode;
-    let nom = elmt.children[2].children[0].textContent;
+    // let nom = elmt.children[2].children[0].textContent;
 
     dataToModifie.id = elmt.children[1].children[0].textContent;
     dataToModifie.nom = elmt.children[2].children[0].textContent;
@@ -648,7 +648,7 @@ function modifPerson(event){
     dataToModifie.dateNaissance = elmt.children[4].children[0].textContent;
     dataToModifie.email = elmt.children[5].children[0].textContent;
     dataToModifie.phone = elmt.children[6].children[0].textContent;
-    dataToModifie.sexe = elmt.children[7].children[0].textContent;
+    dataToModifie.sexe = elmt.children[7].children[0].firstChild.value  == 'default' ? 'm' : (elmt.children[7].children[0].firstChild.value == 'Féminin' ? 'f' : 'default')
     dataToModifie.com = elmt.children[8].children[0].textContent;
     headerOps.showModal('modifPerson');
     console.log(elmt.children[8].children[0].textContent); 
